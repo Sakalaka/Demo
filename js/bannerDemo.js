@@ -83,6 +83,7 @@
 			document.getElementById('route_text1').style.left='-60%';
 			document.getElementById('route_text2').style.left='1200%';
 			document.getElementById('show_map').style.display='none';
+			hiddenmap();
 			hiddenIntroduction();
 		}
 		function showmap(){
