@@ -1,0 +1,252 @@
+		*,div,ul{
+			margin: 0;
+			padding:0;
+			overflow:hidden ;
+			color: #fff;
+		}
+		#container{
+			position: relative;
+			-webkit-transition:filter 1s;
+		}
+/*		#container:hover{
+			filter: blur(5px);
+		}*/
+		#list{
+			position: absolute;
+			left: 0;
+			-webkit-transition:left 1s;
+		}
+		#list img{
+			display: block;
+			float: right;
+		}
+		#mask{
+			position: absolute;
+			top: 0;
+			left: 0;
+			background:url(../img/bg_dim.png) repeat;
+			z-index: 100;
+/*			opacity: 0.4;
+			filter: alpha(opacity=40);
+			filter: blur(5px);*/
+		}
+		#navigation{
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-top: 35px;
+			margin-left: 100px;
+			width:600px;
+			height: 50px;
+/*			opacity: 0.6;
+			filter: alpha(opacity=70);*/
+			z-index: 101;z
+		}
+		#navigation ul{
+			width:400px;
+			height: 40px;
+			float: right;
+			margin-left: 30px;
+			list-style: none;
+		}
+		#navigation ul li{
+			float: left;
+			padding-left: 20px;
+		}
+		#navigation a{
+			color: #fff;
+			font-family: "微软雅黑";
+			line-height: 50px;
+			z-index: 101;
+			text-decoration-line: none;
+		}
+		#navigation a:hover{
+			border-bottom: 1px solid #fff;
+		}
+		#centerlogo{
+			position:absolute;
+			top:50%;
+			left: 50%;
+			margin-top: -23px;
+			margin-left:-245px;
+			z-index: 101;
+			-webkit-transition:top 1s;
+		}
+		audio {
+			position: fixed;
+			z-index: 105;
+		}
+		#change{
+			position: absolute;
+			height: 78px;
+			width: 1000px;
+			top: 50%;
+			left: 50%;
+			margin-left: -500px;
+			margin-top: -36px;
+		}
+		#change img{
+			z-index: 106;
+			position: relative;
+			opacity: 0.2;
+			filter: alpha(opacity=20);
+			-webkit-transition:filter 3s;
+		}
+		#change img:hover{
+			opacity: 0.6;
+			filter: alpha(opacity=60);
+		}
+		#introduction{
+			position: absolute;
+			height: 0px;
+			background-color: #000;
+			opacity: 0.7;
+			filter: alpha(opacity=70);
+			top:0;
+			left: 0;
+			z-index: 110;
+			-webkit-transition:height 1s;
+		}
+		#summary_box{
+			z-index: 110;
+		}
+		.introduction_text{
+			width:500px;
+			height:200px;
+		}
+		#summary_text1{
+			position: absolute;
+			top: 45%;
+			left:-45%;
+			margin-left: -350px;
+			margin-top: -100px;
+			color: #fff;
+			-webkit-transition:left 1s;
+		}
+		.introduction_pic{
+			display: block;
+		}
+		#summary_pic1{
+			position: absolute;
+			top: 40%;
+			right:-40%;
+			margin-right: -300px;
+			margin-top: -100px;
+			-webkit-transition:right 1s;
+
+		}
+		#summary_underline{
+			position: absolute;
+			z-index: 110;
+			top: 70%;
+			left: 45%;
+			margin-left: -350px;
+			margin-top: -100px;
+			width: 0;
+			height: 2px;
+			background-color: #fff;
+			-webkit-transition:width 2s;
+		}
+		#route_start{
+			display: block;
+			position: absolute;
+			top:-30%;
+			left: 350px;
+			z-index: 110;
+			color: #fff;
+		}
+		#route_end{
+			display: block;
+			position: absolute;
+			top:-30%;
+			right: 350px;
+			z-index: 110;
+			color: #fff;
+			-webkit-transition:top 1s;
+		}
+		#route_line{
+			width: 0px;
+			height: 2px;
+			position: absolute;
+			top: -32%;
+			left: 400px;
+			z-index: 110;
+			background-color: #fff;
+			-webkit-transition:width 5s;
+		}
+		#routeIntroduction{
+			z-index: 110;
+		}
+		.routetext{
+			width: 800px;
+			height: 100px;
+			position: absolute;
+			color: #fff;
+			line-height: 24px;
+			margin-left: -500px;
+			margin-top: -50px;
+			z-index: 110;
+		}
+		#route_text1{
+			top:50%;
+			left: -60%;
+			-webkit-transition:left 2s;
+		}
+		#route_text2{
+			top:65%;
+			left: 1200%;
+			padding-top:10px;
+			-webkit-transition:left 3s;
+		}
+		#show_map{
+			width: 800px;
+			height: 20px;
+			display: none;
+			position: absolute;
+			margin-left: -500px;
+			margin-top: -50px;
+			top: 78%;
+			left: 60%;
+			z-index: 110;
+			color: #fff;
+		}
+		#show_map:hover{
+			color: #fcd;
+		}
+		#route_map{
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -290px;
+			margin-top: -190px;
+			z-index: 111;
+		}
+		#guide_box{
+			display: none;
+			width: 900px;
+			height: 400px;
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			margin-top: -300px;
+			margin-left: -450px;
+			z-index: 110;
+		}
+		#guide{
+			width: 1000px;
+			height: 400px;
+			overflow: hidden;
+			overflow-y: auto;
+			position: absolute;
+			top: 75%;
+			left: 50%;
+			margin-top: -300px;
+			margin-left: -500px;
+			z-index: 110;
+		}
+		#guide p{
+			width: 700px;
+			margin: 0 auto;
+			line-height: 24px;
+		}
