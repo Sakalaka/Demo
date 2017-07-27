@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSSDraw</title>
+	<style type="text/css">
+		.center{
+			position: absolute;
+
+		}
+		#head{
+			position: absolute;
+			top:100px;
+			left: 400px;
+			margin-top: -100px;
+			margin-left: -100px;	
+			width:250px;
+			height: 210px;
+			border:5px solid #000;
+			background-color: #1785d4;
+			border-radius: 125px; 
+		}
+		#head_white{
+			position: absolute;
+			top:150px;
+			left: 400px;
+			margin-top: -100px;
+			margin-left: -76px;	
+			width:200px;
+			height: 162px;
+			border:5px solid #000;
+			background-color: #fff;
+			border-radius: 100px; 
+		}
+		#left_eye{
+			width: 40px;
+			height: 50px;
+			position: absolute;
+			top: 30px;
+			left:380px;
+			border:5px solid #000;
+			background-color: #fff;
+			border-radius: 25px; 
+		}
+		#left_eye_pupil{
+			width: 12px;
+			height: 14px;
+			position: absolute;
+			top: 60px;
+			left:412px;
+			background-color: #000;
+			border-radius: 7px; 			
+		}
+		#right_eye{
+			width: 40px;
+			height: 50px;
+			position: absolute;
+			top: 30px;
+			left:430px;
+			border:5px solid #000;
+			background-color: #fff;
+			border-radius: 25px; 
+		}
+		#right_eye_pupil{
+			width: 14px;
+			height: 4px;
+			position: absolute;
+			top: 60px;
+			left:438px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-right: 2px solid #000;
+			border-left: 2px solid #000; 
+			border-top:5px solid #000;
+		}
+		#nose{
+			width: 20px;
+			height: 20px;
+			background-color: #d1403d;
+			position: absolute;
+			top: 76px;
+			left:415px;
+			border:5px solid #000;
+			border-radius: 15px; 
+		}
+		#middle_line{
+			width: 5px;
+			height: 55px;
+			position: absolute;
+			top: 105px;
+			left: 428px;
+			background-color: #000;
+		}
+		#left_mustache_1{
+			width: 50px;
+			height: 5px;
+			top: 94px;
+			left: 348px;
+			position: absolute;
+			border-radius: 15px; 
+			background-color: #000;
+			transform: rotate(20deg);
+		}
+		#left_mustache_2{
+			width: 56px;
+			height: 5px;
+			top: 116px;
+			left: 340px;
+			position: absolute;
+			background-color: #000;
+			border-radius: 15px; 
+			transform: rotate(8deg);
+		}
+		#left_mustache_3{
+			width: 56px;
+			height: 5px;
+			top: 140px;
+			left: 340px;
+			position: absolute;
+			background-color: #000;
+			border-radius: 15px; 
+			transform: rotate(-8deg);
+		}
+		#right_mustache_1{
+			width: 50px;
+			height: 5px;
+			top: 94px;
+			left:460px;
+			position: absolute;
+			border-radius: 15px; 
+			background-color: #000;
+			transform: rotate(-20deg);
+		}
+		#right_mustache_2{
+			width: 56px;
+			height: 5px;
+			top: 116px;
+			left:462px;
+			position: absolute;
+			background-color: #000;
+			border-radius: 15px; 
+			transform: rotate(-8deg);
+		}
+		#right_mustache_3{
+			width: 56px;
+			height: 5px;
+			top: 140px;
+			left: 462px;
+			position: absolute;
+			background-color: #000;
+			border-radius: 15px; 
+			transform: rotate(8deg);
+		}
+		#mouth{
+			position: absolute;
+			width: 150px;
+			height: 100px;
+			top:80px;
+			left: 355px;
+			border-bottom-left-radius: 60px;
+			border-bottom-right-radius:60px;
+			border-bottom:5px solid #000;
+		}
+		#necklace{
+			position: absolute;
+			width: 150px;
+			height: 10px;
+			top: 200px;
+			left: 350px;
+			border-radius: 60px;
+			border:5px solid #000;
+			background-color: #dc3731;
+		}
+		#necklace_bell{
+			position: absolute;
+			top: 200px;
+			left: 412px;
+			width: 25px;
+			height: 25px;
+			border-radius: 20px;
+			border:5px solid #000;
+			background-color: #e1c059; 
+		}
+		#necklace_bell_tiny1{
+			position: absolute;
+			top: 208px;
+			left: 415px;
+			width: 28px;
+			height: 25px;
+			border-top-left-radius: 60px;
+			border-top-right-radius:60px;
+			border-top:3px solid #000;
+		}
+		#necklace_bell_tiny2{
+			position: absolute;
+			top: 213px;
+			left: 415px;
+			width: 28px;
+			height: 25px;
+			border-top-left-radius: 60px;
+			border-top-right-radius:60px;
+			border-top:3px solid #000;
+		}
+		#necklace_dot{
+			position: absolute;
+			top: 218px;
+			left: 425px;
+			width: 8px;
+			height: 8px;
+			border-radius: 10px;
+			background-color: #000;
+		}
+		#necklace_dot_tiny{
+			position: absolute;
+			top: 222px;
+			left: 427px;
+			width: 4px;
+			height: 8px;
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div id="head" ></div>
+	<div id="head_white" ></div>
+	<div id="left_eye"></div>
+	<div id="left_eye_pupil"></div>
+	<div id="right_eye"></div>
+	<div id="right_eye_pupil"></div>
+	<div id="nose"></div>
+	<div id="middle_line"></div>
+	<div id="left_mustache_1"></div>
+	<div id="left_mustache_2"></div>
+	<div id="left_mustache_3"></div>
+	<div id="right_mustache_1"></div>
+	<div id="right_mustache_2"></div>
+	<div id="right_mustache_3"></div>
+	<div id="mouth"></div>
+	<div id="necklace"></div>
+	<div id="necklace_bell"></div>
+	<div id="necklace_bell_tiny1"></div>
+	<div id="necklace_bell_tiny2"></div>
+	<div id="necklace_dot"></div>
+	<div id="necklace_dot_tiny"></div>
+</body>
+</html>
